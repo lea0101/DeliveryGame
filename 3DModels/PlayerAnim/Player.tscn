@@ -1,0 +1,164 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Player2.glb" type="PackedScene" id=1]
+[ext_resource path="res://Player.gd" type="Script" id=2]
+[ext_resource path="res://Material_002.material" type="Material" id=3]
+[ext_resource path="res://Material_003.material" type="Material" id=4]
+
+[sub_resource type="ArrayMesh" id=1]
+resource_name = "Leg1b"
+surfaces/0 = {
+"aabb": AABB( -1, -1, -1, 2, 2, 2.00001 ),
+"array_data": PoolByteArray( 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 63, 129, 0, 0, 0, 0, 0, 127, 127, 146, 48, 0, 60, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 63, 0, 129, 0, 0, 127, 0, 0, 127, 0, 0, 146, 56, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 127, 0, 127, 0, 0, 127, 146, 48, 219, 58, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 63, 129, 0, 0, 0, 0, 0, 127, 127, 146, 48, 219, 58, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 127, 0, 127, 0, 0, 127, 146, 48, 182, 57, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 63, 0, 127, 0, 0, 129, 0, 0, 127, 219, 54, 219, 58, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 191, 129, 0, 0, 0, 0, 0, 127, 127, 0, 0, 0, 60, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 191, 0, 129, 0, 0, 127, 0, 0, 127, 0, 0, 182, 57, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 129, 0, 129, 0, 0, 127, 146, 48, 219, 58, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 191, 129, 0, 0, 0, 0, 0, 127, 127, 0, 0, 219, 58, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 129, 0, 129, 0, 0, 127, 146, 48, 182, 57, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 191, 0, 127, 0, 0, 129, 0, 0, 127, 219, 54, 0, 60, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 63, 0, 129, 0, 0, 127, 0, 0, 127, 146, 48, 146, 56, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 127, 0, 127, 0, 0, 127, 146, 52, 219, 58, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 63, 127, 0, 0, 0, 0, 0, 129, 127, 146, 48, 0, 60, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 127, 0, 127, 0, 0, 127, 146, 52, 182, 57, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 63, 0, 127, 0, 0, 129, 0, 0, 127, 146, 52, 219, 58, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 63, 127, 0, 0, 0, 0, 0, 129, 127, 146, 48, 219, 58, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 191, 0, 129, 0, 0, 127, 0, 0, 127, 146, 48, 182, 57, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 129, 0, 129, 0, 0, 127, 0, 0, 219, 58, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 191, 127, 0, 0, 0, 0, 0, 129, 127, 146, 52, 0, 60, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 129, 0, 129, 0, 0, 127, 0, 0, 182, 57, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 191, 0, 127, 0, 0, 129, 0, 0, 127, 146, 52, 0, 60, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 191, 127, 0, 0, 0, 0, 0, 129, 127, 146, 52, 219, 58 ),
+"array_index_data": PoolByteArray( 0, 0, 9, 0, 3, 0, 0, 0, 6, 0, 9, 0, 8, 0, 21, 0, 10, 0, 8, 0, 19, 0, 21, 0, 20, 0, 17, 0, 23, 0, 20, 0, 14, 0, 17, 0, 13, 0, 4, 0, 15, 0, 13, 0, 2, 0, 4, 0, 7, 0, 12, 0, 18, 0, 7, 0, 1, 0, 12, 0, 22, 0, 5, 0, 11, 0, 22, 0, 16, 0, 5, 0 ),
+"blend_shape_data": [  ],
+"format": 97559,
+"index_count": 36,
+"material": ExtResource( 4 ),
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 24
+}
+
+[sub_resource type="ArrayMesh" id=2]
+resource_name = "Leg2b"
+surfaces/0 = {
+"aabb": AABB( -1, -1, -1, 2, 2, 2.00001 ),
+"array_data": PoolByteArray( 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 63, 129, 0, 0, 0, 0, 0, 127, 127, 85, 53, 0, 60, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 63, 0, 129, 0, 0, 127, 0, 0, 127, 0, 0, 0, 0, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 127, 0, 127, 0, 0, 127, 85, 53, 85, 57, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 63, 129, 0, 0, 0, 0, 0, 127, 127, 85, 53, 85, 57, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 127, 0, 127, 0, 0, 127, 85, 53, 85, 53, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 63, 0, 127, 0, 0, 129, 0, 0, 127, 255, 59, 85, 57, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 191, 129, 0, 0, 0, 0, 0, 127, 127, 0, 0, 0, 60, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 191, 0, 129, 0, 0, 127, 0, 0, 127, 0, 0, 85, 53, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 129, 0, 129, 0, 0, 127, 85, 53, 85, 57, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 191, 129, 0, 0, 0, 0, 0, 127, 127, 0, 0, 85, 57, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 129, 0, 129, 0, 0, 127, 85, 53, 85, 53, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 191, 0, 127, 0, 0, 129, 0, 0, 127, 255, 59, 0, 60, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 63, 0, 129, 0, 0, 127, 0, 0, 127, 85, 53, 0, 0, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 127, 0, 127, 0, 0, 127, 85, 57, 85, 57, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 63, 127, 0, 0, 0, 0, 0, 129, 127, 85, 53, 0, 60, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 127, 0, 127, 0, 0, 127, 85, 57, 85, 53, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 63, 0, 127, 0, 0, 129, 0, 0, 127, 85, 57, 85, 57, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 63, 127, 0, 0, 0, 0, 0, 129, 127, 85, 53, 85, 57, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 191, 0, 129, 0, 0, 127, 0, 0, 127, 85, 53, 85, 53, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 129, 0, 129, 0, 0, 127, 0, 0, 85, 57, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 191, 127, 0, 0, 0, 0, 0, 129, 127, 85, 57, 0, 60, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 129, 0, 129, 0, 0, 127, 0, 0, 85, 53, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 191, 0, 127, 0, 0, 129, 0, 0, 127, 85, 57, 0, 60, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 191, 127, 0, 0, 0, 0, 0, 129, 127, 85, 57, 85, 57 ),
+"array_index_data": PoolByteArray( 0, 0, 9, 0, 3, 0, 0, 0, 6, 0, 9, 0, 8, 0, 21, 0, 10, 0, 8, 0, 19, 0, 21, 0, 20, 0, 17, 0, 23, 0, 20, 0, 14, 0, 17, 0, 13, 0, 4, 0, 15, 0, 13, 0, 2, 0, 4, 0, 7, 0, 12, 0, 18, 0, 7, 0, 1, 0, 12, 0, 22, 0, 5, 0, 11, 0, 22, 0, 16, 0, 5, 0 ),
+"blend_shape_data": [  ],
+"format": 97559,
+"index_count": 36,
+"material": ExtResource( 3 ),
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 24
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Run"
+length = 0.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( -15, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Leg1:translation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -0.37, -2.436, -0.35 ), Vector3( -0.37, -2.436, -0.7 ), Vector3( -0.37, -2.436, 0 ), Vector3( -0.37, -2.436, 0.35 ), Vector3( -0.37, -2.436, 0.7 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Leg1:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 15, 0, 0 ), Vector3( 30, 0, 0 ), Vector3( 0, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( -30, 0, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Leg2:translation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0.352, -2.436, 0.35 ), Vector3( 0.352, -2.436, 0.7 ), Vector3( 0.352, -2.436, 0 ), Vector3( 0.352, -2.436, -0.35 ), Vector3( 0.352, -2.436, -0.7 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Leg2:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -15, 0, 0 ), Vector3( -30, 0, 0 ), Vector3( 0, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( 30, 0, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Arm2:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Arm1:rotation_degrees")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -15, 0, 0 ), Vector3( 30, 0, 0 ), Vector3( -15, 0, 0 ) ]
+}
+
+[node name="Player" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 0, 0 )
+script = ExtResource( 2 )
+
+[node name="Body" parent="." index="2"]
+transform = Transform( 0.658801, 0, 0, 0, 1.24961, 0, 0, 0, 0.658801, 0, -0.451279, 1.49012e-08 )
+
+[node name="Arm1" parent="." index="3"]
+transform = Transform( 0.220213, 0, 0, 0, 1.23759, -0.0258546, 0, 0.146314, 0.21869, -0.815258, -0.578592, 0 )
+
+[node name="Arm2" parent="." index="4"]
+transform = Transform( 0.220213, 0, 0, 0, 1.24616, -0.00194094, 0, 0.010984, 0.220204, 0.836503, -0.565687, 1.49012e-08 )
+
+[node name="Leg1" parent="." index="5"]
+transform = Transform( 0.231304, 0, 0, 0, 0.730934, -0.0737604, 0, 0.216721, 0.248772, -0.37, -2.436, -0.385351 )
+
+[node name="Leg1b" type="MeshInstance" parent="Leg1" index="0"]
+transform = Transform( 1, 0, 0, 0, 0.887056, 0, 0, 0, 1, 0.026852, -1.86176, -0.00571917 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Leg2" parent="." index="6"]
+transform = Transform( 0.231304, 0, 0, 0, 0.730934, 0.0737606, 0, -0.216721, 0.248772, 0.352, -2.436, 0.385351 )
+
+[node name="Leg2b" type="MeshInstance" parent="Leg2" index="0"]
+transform = Transform( 1, 0, 0, 0, 0.887056, 0, 0, 0, 1, 0.00323558, -1.86426, 0.0660148 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="8"]
+anims/Run = SubResource( 3 )
+
+[node name="Leg2b" parent="." index="9"]
+transform = Transform( 0.231304, 0, 0, 0, 0.676278, 2.23517e-08, 0, -1.49012e-08, 0.259476, 0.352397, -3.85527, -0.00273424 )
+visible = false
+
+[node name="Leg1b" parent="." index="10"]
+visible = false
